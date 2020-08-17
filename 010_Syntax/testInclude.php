@@ -1,6 +1,11 @@
 <?php
   include("testDefine.php");
-  // require("testDefine.php");
+  require("testDefine.php");
+  
 
-  echo test;
+  $total = 123456;
+  //include("testDefine.php");
+
+  echo "<br>".test;
+  echo "<br>$total";
 ?>

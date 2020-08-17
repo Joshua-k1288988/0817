@@ -8,7 +8,7 @@
   echo "<hr>";
 
   $x = 3;
-  if ($x >= 10 & foo())
+  if ($x >= 10 & foo())  // 做完全部才判斷true flase
     echo "yes";
   else
     echo "no";

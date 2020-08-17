@@ -3,7 +3,7 @@
   $y = $x++;
   echo "x = $x, y = $y";
   
-  echo "<br>";
+  echo "<hr>";
 
   $x = 1;
   $y = ++$x;
