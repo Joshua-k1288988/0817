@@ -3,7 +3,8 @@
 	sort($testArray);
 	var_dump($testArray);
 	
-	echo "<br />";
+	echo "<br /><hr>";
+
 	
 	natsort($testArray);
 	var_dump($testArray);
