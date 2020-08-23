@@ -5,16 +5,16 @@ header("location: index.php");
 exit();
 }
 
-  if (isset($_POST["btnOK"])){
-    $userName = $_POST["txtUserName"];
-    if($userName != ""){
-      setcookie("uid", $userName);
-      header("location: index.php");
-      exit();
-    } 
-  }
-  if(isset($_POST["btnHome"])){
+if (isset($_POST["btnOK"])){
+  $userName = $_POST["txtUserName"];
+  if($userName != ""){
+    setcookie("uid", $userName);
     header("location: index.php");
+    exit();
+  } 
+}
+if(isset($_POST["btnHome"])){
+  header("location: index.php");
   }
 ?>
 

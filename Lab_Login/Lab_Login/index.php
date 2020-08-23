@@ -19,7 +19,13 @@
     <td align="center" bgcolor="#CCCCCC"><font color="#FFFFFF">會員系統 - 首頁</font></td>
   </tr>
   <tr>
-    <td align="center" valign="baseline"><a href="login.php">登入</a> | <a href="secret.php">會員專用頁</a></td>
+  <?php if($userName == "Guest"){ ?>
+    <td align="center" valign="baseline"><a href="login.php">登入</a>
+  <?php } else { ?>
+    <td align="center" valign="baseline"><a href="login.php?signout=1">登出</a>
+  <?php } ?>
+
+     | <a href="secret.php">會員專用頁</a></td>
   </tr>
   <tr>
     <td align="center" bgcolor="#CCCCCC">&nbsp;<?= "Welcome!  ".$userName ?></td>
